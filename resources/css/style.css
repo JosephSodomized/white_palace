@@ -1,0 +1,115 @@
+header{
+    background-image: url("/white_palace/resources/img/main.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: 200px;
+    
+}
+
+body{
+    overflow-x: hidden;
+}
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color:  #343a40;
+}
+
+.dark{
+    background-color: #202020;
+}
+.card-img-top{
+    object-fit: cover;
+    height: 15vh;
+}
+
+.cards{
+    position: relative;
+    width: 100%;
+    
+    z-index: 1;
+}
+
+.cards::before{
+    background: inherit;
+    bottom: 70px;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(-1.5deg);
+    transform-origin: 100%;
+    z-index: -1;
+    height: 3px;
+    background: linear-gradient(to right, rgb(240, 240, 240), rgb(20, 20, 20));
+}
+
+.cards2{
+    position: relative;
+    width: 100%;
+    
+    z-index: 1;
+}
+.cards2::after{
+    background: inherit;
+    top: 500px;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(1.5deg);
+    transform-origin: 100%;
+    z-index: -1;
+    height:3px;
+    background: linear-gradient(to right, rgb(240, 240, 240), rgb(20, 20, 20));
+}
+
+.gradient{
+    background: linear-gradient(to right, rgb(240, 240, 240), rgb(20, 20, 20));
+    
+}
+
+.fa-code{
+    background: -webkit-linear-gradient(rgb(123, 40, 134), rgb(146, 146, 146));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-keyboard{
+    background: -webkit-linear-gradient(rgb(255, 94, 0), rgb(255, 238, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-database{
+    background: -webkit-linear-gradient(rgb(0, 195, 255), rgb(104, 226, 67));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+
+.after{
+    position: relative;
+}
+.after:after{
+    content: '';
+    width: 30px;
+    border: 0.5px solid black;
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.img_section{
+    background-image: url("/white_palace/resources/img/second.jpg");
+    background-size: cover;
+    
+}
