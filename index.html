@@ -10,7 +10,8 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="resources/css/style.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -19,12 +20,17 @@
 
 <body>
   <header style="min-height: 100vh;">
-    <nav data-aos="fade-right" class="navbar navbar-custom navbar-expand-lg ">
-      <ul class="navbar-nav ml-auto mt-5 mr-5 ">
-        <li class="nav-item"><a class="nav-link " href="">Home</a></li>
-        <li class="nav-item"><a class="nav-link " href="">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link " href="">About</a></li>
-      </ul>
+    <nav data-aos="fade-right" class="navbar navbar-expand-lg navbar-custom navbar-expand-lg ">
+      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="myNav">
+        <ul class="navbar-nav ml-auto mt-5 mr-5 custom-nav">
+          <li class="nav-item active"><a class="nav-link " href="">Home</a></li>
+          <li class="nav-item"><a class="nav-link " href="">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link " href="">About</a></li>
+        </ul>
+      </div>
     </nav>
     <div data-aos="fade-right" data-aos-delay="300" class="float-right p-5 display-2 text-right">
       <span>
@@ -45,89 +51,92 @@
   </header>
   <section style="min-height: 700px">
     <div class="pb-5">
-    <div data-aos="zoom-in" class="display-3 text-center">Welcome to my site</div>
-    <div class="container mt-5">
-      <div class="row">
-        <div class="card-deck mt-5">
-          <div data-aos="zoom-in" data-aos-delay="200" class="card mx-4" style="height: 100px;">
-            <img src="resources/img/card_1.jpg" alt="" class="card-img-top">
-            <div class="card-body dark text-white">
-              <h5 class="card-title">
-                Lorem ipsum
-              </h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              <p class="card-text"><small class="text-muted">lorem ipsum</small></p>
+      <div data-aos="zoom-in" class="display-3 text-center">Welcome to my site</div>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="card-deck mt-5">
+            <div data-aos="zoom-in" data-aos-delay="200" class="card mx-4" style="height: 100px;">
+              <img src="resources/img/card_1.jpg" alt="" class="card-img-top">
+              <div class="card-body dark text-white">
+                <h5 class="card-title">
+                  Lorem ipsum
+                </h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <p class="card-text"><small class="text-muted">lorem ipsum</small></p>
+              </div>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="300" class="card mx-4" style="height: 100px;">
+              <img src="resources/img/card_2.jpg" alt="" class="card-img-top">
+              <div class="card-body dark text-white">
+                <h5 class="card-title">
+                  Lorem ipsum
+                </h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <p class="card-text"><small class="text-muted">lorem ipsum</small></p>
+              </div>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="400" class="card mx-4" style="height: 100px;">
+              <img src="resources/img/card_3.jpg" alt="" class="card-img-top">
+              <div class="card-body dark text-white">
+                <h5 class="card-title">
+                  Lorem ipsum
+                </h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <p class="card-text"><small class="text-muted ">lorem ipsum</small></p>
+              </div>
             </div>
           </div>
-          <div data-aos="zoom-in" data-aos-delay="300" class="card mx-4" style="height: 100px;">
-            <img src="resources/img/card_2.jpg" alt="" class="card-img-top">
-            <div class="card-body dark text-white">
-              <h5 class="card-title">
-                Lorem ipsum
-              </h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              <p class="card-text"><small class="text-muted">lorem ipsum</small></p>
-            </div>
-          </div>
-          <div data-aos="zoom-in" data-aos-delay="400" class="card mx-4" style="height: 100px;">
-            <img src="resources/img/card_3.jpg" alt="" class="card-img-top">
-            <div class="card-body dark text-white">
-              <h5 class="card-title">
-                Lorem ipsum
-              </h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              <p class="card-text"><small class="text-muted ">lorem ipsum</small></p>
-            </div>
-          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <section style="min-height: 50vh; margin-top: 4%; background-color: rgb(235, 235, 235)">
+    <div class="cards"> </div>
+    <div class="float-left" style="margin-left: 20%; margin-top: 3%; font-size: 30px;">
+      <p data-aos="zoom-in" class="text-center" style="font-size: 40px;">Lorem consectetur adipiscing elit</p>
+      <div class="row display-3 text-center">
+        <div data-aos="zoom-in" data-aos-delay="300" class="col pt-5">
+          <i class="fas fa-code"></i>
+        </div>
+        <div data-aos="zoom-in" data-aos-delay="400" class="col pt-5"><i class="far fa-keyboard"></i></div>
+        <div data-aos="zoom-in" data-aos-delay="500" class="col pt-5"><i class="fas fa-database"></i></i></div>
+      </div>
+      <button data-aos="zoom-in" class="btn btn-outline-dark m-5 px-4 d-block mx-auto ">CHECK OUT</button>
+    </div>
+
+    <img data-aos="fade-left" data-aos-duration="3000" class="float-right" src="resources/img/iphone.png" alt="" style="max-width: 50%; margin-right: -10%;">
+    <div class="cards2"></div>
+  </section>
+  <section class="mt-5 mb-5" style="height: 25vh">
+    <div data-aos="zoom-in" class="text-center display-4">Partners:</div>
+    <div class="container">
+      <div class="row text-center">
+        <div data-aos="zoom-in" data-aos-delay="100" class="col mt-5"><img src="resources/img/partner1.png" alt=""
+            style="width: 200px;"></div>
+        <div data-aos="zoom-in" data-aos-delay="200" class="col mt-5"><img src="resources/img/partner2.png" alt=""
+            style="width: 200px;"></div>
+        <div data-aos="zoom-in" data-aos-delay="300" class="col mt-5"><img src="resources/img/partner3.png" alt=""
+            style="width: 200px;"></div>
+        <div data-aos="zoom-in" data-aos-delay="400" class="col mt-5"><img src="resources/img/partner4.png" alt=""
+            style="width: 200px;"></div>
+      </div>
+    </div>
+  </section>
+  <section class="img_section" style="height: 50vh">
+    <div class="pb-5" style="padding-top: 5%;"></div>
+    <div class="card w-75 mx-auto">
+      <div class="card-body">
+        <div class="card-title">
+          <h3 class="text-center after">Lorem ipsum</h3>
+          <p class="card-text text-center m-3"> If you're interested in kicking the tires and are comfortable with dev
+            environments, then install the app via these terminal commands</p>
         </div>
       </div>
     </div>
-  
-  </div>
+  </section>
 
-  </section>
-  <section style="height: 50vh; margin-top: 4%;">
-      <div class="cards"> </div>
-        <div class="float-left" style="margin-left: 20%; margin-top: 3%; font-size: 30px;">
-          <p data-aos="zoom-in" class="text-center" style="font-size: 40px;">Lorem consectetur adipiscing elit</p>
-          <div class="row display-3 text-center">
-          <div data-aos="zoom-in" data-aos-delay="300" class="col pt-5">
-            <i class="fas fa-code"></i>
-          </div> 
-          <div data-aos="zoom-in" data-aos-delay="400" class="col pt-5"><i class="far fa-keyboard"></i></div> 
-          <div data-aos="zoom-in" data-aos-delay="500" class="col pt-5"><i class="fas fa-database"></i></i></div> 
-        </div>
-        <button data-aos="zoom-in" class="btn btn-outline-dark m-5 px-4 d-block mx-auto ">CHECK OUT</button>
-        </div>
-        
-        <img data-aos="fade-left" data-aos-duration="3000" class="float-right" src="resources/img/iphone.png" alt="" style="max-width: 50%; margin-right: -10%;">
-        <div class="cards2"></div>
-  </section>
-  <section class="mt-5 mb-5" style="height: 25vh">
-   <div data-aos="zoom-in" class="text-center display-4">Partners:</div>
-   <div class="container">
-   <div class="row text-center">
-     <div data-aos="zoom-in" data-aos-delay="100" class="col mt-5"><img src="resources/img/partner1.png" alt="" style="width: 200px;"></div>
-     <div data-aos="zoom-in" data-aos-delay="200" class="col mt-5"><img src="resources/img/partner2.png" alt="" style="width: 200px;"></div>
-     <div data-aos="zoom-in" data-aos-delay="300" class="col mt-5"><img src="resources/img/partner3.png" alt="" style="width: 200px;"></div>
-     <div data-aos="zoom-in" data-aos-delay="400" class="col mt-5"><img src="resources/img/partner4.png" alt="" style="width: 200px;"></div>
-   </div>
-  </div>
-  </section>
-  <section class="img_section" style="height: 50vh">
-      <div class="pb-5" style="padding-top: 5%;"></div>  
-   <div class="card w-75 mx-auto">
-          <div class="card-body">
-        <div class="card-title">
-          <h3 class="text-center after">Lorem ipsum</h3>
-          <p class="card-text text-center m-3"> If you're interested in kicking the tires and are comfortable with dev environments, then install the app via these terminal commands</p>
-        </div>
-        </div>
-      </div>
-  </section>
-  <section style="height: 75vh;">
-
-  </section>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 

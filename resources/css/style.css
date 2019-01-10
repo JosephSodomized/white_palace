@@ -1,23 +1,33 @@
 header{
-    background-image: url("/white_palace/resources/img/main.jpg");
+    background-image: url("/resources/img/main.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-position-y: 200px;
-    
 }
 
 body{
     overflow-x: hidden;
 }
+
 .navbar-custom .navbar-nav .nav-link {
     color: rgba(0, 0, 0, 0.5);
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
+    
 }
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
     color:  #343a40;
+    
 }
+
+.custom-toggler.navbar-toggler {
+    border-color: #343a40;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#343a40' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
 
 .dark{
     background-color: #202020;
@@ -30,13 +40,11 @@ body{
 .cards{
     position: relative;
     width: 100%;
-    
-    z-index: 1;
 }
 
 .cards::before{
     background: inherit;
-    bottom: 70px;
+    bottom: 0;
     content: '';
     display: block;
     height: 50%;
@@ -46,19 +54,18 @@ body{
     transform: skewY(-1.5deg);
     transform-origin: 100%;
     z-index: -1;
-    height: 3px;
-    background: linear-gradient(to right, rgb(240, 240, 240), rgb(20, 20, 20));
+    height: 100px;
+    background:rgb(235, 235, 235);
+    /* background: linear-gradient(to right, rgb(240, 240, 240), rgb(20, 20, 20)); */
 }
 
 .cards2{
     position: relative;
     width: 100%;
-    
-    z-index: 1;
 }
 .cards2::after{
     background: inherit;
-    top: 500px;
+    top: 430px;
     bottom: 0;
     content: '';
     display: block;
@@ -69,8 +76,9 @@ body{
     transform: skewY(1.5deg);
     transform-origin: 100%;
     z-index: -1;
-    height:3px;
-    background: linear-gradient(to right, rgb(240, 240, 240), rgb(20, 20, 20));
+    height:100px;
+    background:rgb(235, 235, 235);
+    /* background: linear-gradient(to right, rgb(240, 240, 240), rgb(20, 20, 20)); */
 }
 
 .gradient{
@@ -109,7 +117,7 @@ body{
 }
 
 .img_section{
-    background-image: url("/white_palace/resources/img/second.jpg");
+    background-image: url("/resources/img/second.jpg");
     background-size: cover;
     
 }
